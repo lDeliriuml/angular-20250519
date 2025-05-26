@@ -1,0 +1,13 @@
+:host {
+    display: block;
+    background-color: aqua;
+    height: 400px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+h1 {
+    color: red;
+}

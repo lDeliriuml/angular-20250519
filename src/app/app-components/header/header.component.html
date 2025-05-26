@@ -1,0 +1,24 @@
+<mat-toolbar>
+    <!-- selector: 'button[mat-icon-button]' -->
+    <button mat-icon-button aria-label="Example icon-button with menu icon" class="example-icon">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <!-- <img src="{{logoUrl}}" /> -->
+    <img alt="logo" [src]="logoUrl" />
+    <!-- <span>1 + 1</span> -->
+    <!-- <span>{{1 + 1}}</span> -->
+    <!-- {{this.title}} -->
+    <h1>{{ title }}</h1>
+    <!-- <span>{{window}}</span> -->
+    <span class="example-spacer"></span>
+    <button
+        mat-icon-button
+        aria-label="Example icon-button with heart icon"
+        class="example-icon favorite-icon"
+    >
+        <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button aria-label="Example icon-button with share icon" class="example-icon">
+        <mat-icon>share</mat-icon>
+    </button>
+</mat-toolbar>
