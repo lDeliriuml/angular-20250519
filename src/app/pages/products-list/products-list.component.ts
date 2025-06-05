@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, computed, signal} from '@angular/core';
+import {ChangeDetectionStrategy, Component, signal} from '@angular/core';
 import {CardComponent} from './card/card.component';
 import {productsMock} from '../../shared/products/products.mock';
 
@@ -11,13 +11,5 @@ import {productsMock} from '../../shared/products/products.mock';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProductsListComponent {
-    readonly count = signal(0);
-
-    readonly product = computed(() => productsMock[this.count()]);
-
-    constructor() {
-        setInterval(() => {
-            this.count.update(count => count + 1);
-        }, 1000);
-    }
+    readonly products = signal(productsMock);
 }
