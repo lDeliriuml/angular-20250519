@@ -17,6 +17,5 @@ export class SidenavComponent {
 
     toggleDrawer() {
         this.drawerOpenedChange.emit(!this.drawerOpened());
-        // this.drawerOpened.update(isOpened => !isOpened);
     }
 }

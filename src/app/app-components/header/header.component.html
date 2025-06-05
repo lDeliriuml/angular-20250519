@@ -1,11 +1,4 @@
 <mat-toolbar>
-    <!-- selector: 'button[mat-icon-button]' -->
-    <!-- <button
-        mat-icon-button
-        aria-label="Example icon-button with menu icon"
-        class="example-icon"
-        (click)="onMenuClick($event)"
-    > -->
     <button
         mat-icon-button
         aria-label="Example icon-button with menu icon"
@@ -15,7 +8,6 @@
         <mat-icon>menu</mat-icon>
     </button>
     <img alt="logo" class="logo" [src]="appConfig().shopIconSrc" />
-    <!-- <span>{{ title() }}</span> -->
     <span>{{ appConfig().title }}</span>
     <span class="example-spacer"></span>
     <button

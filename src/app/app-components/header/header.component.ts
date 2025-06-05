@@ -13,17 +13,6 @@ import {ApplicationConfig} from '../../shared/application-config/application-con
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent {
-    // readonly title = input<string>();
     readonly appConfig = input.required<ApplicationConfig>();
     readonly menuClick = output<Event>();
-
-    // readonly title = 'angular-20250519';
-    // readonly logoUrl = 'favicon.ico';
-
-    onMenuClick(event: Event) {
-        // eslint-disable-next-line no-console
-        console.log('Menu clicked');
-
-        this.menuClick.emit(event);
-    }
 }
