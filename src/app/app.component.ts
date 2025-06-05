@@ -18,6 +18,9 @@ export class AppComponent {
 
     readonly drawerOpenedStore = signal(false);
 
+    readonly contentTemplateFirst = {};
+    readonly contentTemplateSecond = {};
+
     onMenuClicked(event: Event) {
         // eslint-disable-next-line no-console
         console.log('App menu clicked', event);
