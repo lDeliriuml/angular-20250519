@@ -22,17 +22,11 @@ export class PopupHostComponent {
 
     constructor() {
         effect(() => {
-            let templateTmp = null;
-
-            if (templateTmp !== this.template()) {
-                this.contentTemplate().clear();
-                templateTmp = this.template();
-            }
+            this.contentTemplate().clear();
+            const templateTmp = this.template();
 
             if (templateTmp) {
                 this.contentTemplate().createEmbeddedView(templateTmp);
-            } else {
-                this.contentTemplate().clear();
             }
         });
     }
